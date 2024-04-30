@@ -35,7 +35,7 @@ footer{
   position: absolute;
   right: 5px !important;
   top: 4px;
-  z-index: 999999;
+  z-index: 9999;
   cursor: pointer;
 }
 
@@ -121,6 +121,33 @@ footer{
   background-image: url(background_in_space.gif)
 }
 
+.modal-backdrop{
+  z-index: 999 !important;
+}
+
+.modal{
+  top: 55px;
+  padding: 0;
+}
+
+.modal .modal-dialog{
+  margin: 0;
+}
+
+.modal .modal-content{
+  width: 100vw !important;
+  border-radius: 0 !important;
+}
+
+.btn-light-hover:hover{
+  color: #333;
+  background-color: #fff;
+}
+
+.btn-green-hover:hover{
+  color: #fff;
+  background-color: #04aa6d;
+}
 /* 
 * Alteração do elemento diretamente pelo ID
 * Foco direto no elemento.

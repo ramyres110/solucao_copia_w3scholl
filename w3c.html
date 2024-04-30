@@ -25,6 +25,71 @@
 <!-- Conteúdo do HTML -->
 
 <body>
+    <!-- Modal Menu Tutoriais -->
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-0">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pb-5">
+                    <div class="container">
+                        <div class="row mb-5">
+                            <div class="col">
+                                <h2 class="h2 text-warning">Tutoriais</h2>
+                            </div>
+                            <div class="col">
+                                <!-- Formulario para pesquisa -->
+                                <form class="form-inline mx-3">
+                                    <div class="input-group search">
+                                        <input type="text" class="form-control" placeholder="Pesquisar..."
+                                            aria-label="Pesquisar..." aria-describedby="basic-addon2" id="input-search">
+                                        <div class="input-group-append">
+                                            <label for="input-search">
+                                                <span class="input-group-text" id="basic-addon2">
+                                                    <i class="fa fa-search"></i>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex flex-column">
+                                <h4 class="h4 text-warning">HTML e CSS</h4>
+                                <div>
+                                    <button class="btn btn-dark btn-light-hover">Aprenda HTML</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Tutoriais</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Referências</button>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <h4 class="h4 text-warning">Javascript</h4>
+                                <div>
+                                    <button class="btn btn-dark btn-light-hover">Aprenda Javascript</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Tutoriais</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Referências</button>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <h4 class="h4 text-warning">Backend</h4>
+                                <div>
+                                    <button class="btn btn-dark btn-light-hover">Aprenda Python</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Tutoriais</button>
+                                    <button class="btn btn-dark btn-sm btn-green-hover">Referências</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Barra de navegação no top do site -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top py-0">
@@ -45,9 +110,10 @@
             <!-- Menus -->
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">Tutoriais</a>
+                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="modal" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false" data-target="#exampleModal">Tutoriais</a>
                 </li>
+                <!--  -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
                         aria-haspopup="true" aria-expanded="false">Exercícios</a>
@@ -377,6 +443,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script refer async>
+        // Para abrir o modal via script
+        $('#exampleModal').modal('show')
+    </script>
 </body>
 
 </html>
