@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>W3Schools Online Web Tutorials</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Adicionado Favicon -->
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- Adicionado CSS para alterações com incompatibilidade -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icones Font Awesome -->
+    <script src="https://use.fontawesome.com/9c7a531173.js"></script>
+</head>
+
+<!-- Conteúdo do HTML -->
+
+<body>
+
+    <!-- Barra de navegação no top do site -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top py-0">
+        <!-- Logo do W3 School -->
+        <a class="navbar-brand mx-2" href="#">
+            <img src="./w3schools_logo_436_2.png" width="38" height="36" alt="">
+        </a>
+
+        <!-- Botão menu sanduiche para esconder os menus -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Div para esconder os menus. Será escondido quando o tamanho for SM *small -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <!-- Menus -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Tutoriais</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Exercícios</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Certificados</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle py-3 text-dark" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Serviços</a>
+                </li>
+            </ul>
+
+            <!-- Formulario para pesquisa -->
+            <form class="form-inline mx-3">
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar..."
+                        aria-describedby="basic-addon2" id="input-search">
+                    <div class="input-group-append">
+                        <label for="input-search">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Botão para alternar entre modo light e dark -->
+            <button class="btn btn-light rounded-circle">
+                <i class="fa fa-moon-o"></i>
+            </button>
+        </div>
+
+        <!-- Botões a direita -->
+        <div>
+            <!-- Botões escondem conforme o tamanho da tela -->
+            <button class="btn btn-light nav-item-btn mr-2 d-none d-xl-inline">
+                <i class="fa fa-certificate text-roxo mr-2"></i>
+                Plus
+            </button>
+            <button class="btn btn-light nav-item-btn mr-2 d-none d-lg-inline">
+                <i class="fa fa-code text-roxo mr-2"></i>
+                Espaços
+            </button>
+            <button class="btn btn-light nav-item-btn mr-2 d-none d-lg-inline">
+                <i class="fa fa-shopping-cart text-roxo mr-2"></i>
+                Seja Certificado
+            </button>
+
+            <!-- Botão de cadastro e de login. -->
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success btn-cadastrar">Cadastre-se</button>
+                <button type="button" class="btn btn-light btn-login">Acessar</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Lista de linguagens com conteúdos disponíveis -->
+    <div id="conteudos" class="mw-100 d-flex sticky-top pt-5 mt-2">
+        <a href="#" class="ga-nav" title="HTML Tutorial">HTML</a>
+        <a href="#" class="ga-nav" title="CSS Tutorial">CSS</a>
+        <a href="#" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
+        <a href="#" class="ga-nav" title="SQL Tutorial">SQL</a>
+        <a href="#" class="ga-nav" title="Python Tutorial">PYTHON</a>
+        <a href="#" class="ga-nav" title="Java Tutorial">JAVA</a>
+        <a href="#" class="ga-nav" title="PHP Tutorial">PHP</a>
+        <a href="#" class="ga-nav" title="How to">HOW TO</a>
+        <a href="#" class="ga-nav" title="W3.CSS Tutorial">W3.CSS</a>
+        <a href="#" class="ga-nav" title="C Tutorial">C</a>
+        <a href="#" class="ga-nav" title="C++ Tutorial">C++</a>
+        <a href="#" class="ga-nav" title="C# Tutorial">C#</a>
+        <a href="#" class="ga-nav" title="Bootstrap Tutorial">BOOTSTRAP</a>
+        <a href="#" class="ga-nav" title="React Tutorial">REACT</a>
+        <a href="#" class="ga-nav" title="MySQL Tutorial">MYSQL</a>
+        <a href="#" class="ga-nav" title="JQuery Tutorial">JQUERY</a>
+        <a href="#" class="ga-nav" title="Excel Tutorial">EXCEL</a>
+        <a href="#" class="ga-nav" title="XML Tutorial">XML</a>
+        <a href="#" class="ga-nav" title="Django Tutorial">DJANGO</a>
+        <a href="#" class="ga-nav" title="NumPy Tutorial">NUMPY</a>
+        <a href="#" class="ga-nav" title="Pandas Tutorial">PANDAS</a>
+        <a href="#" class="ga-nav" title="Node.js Tutorial">NODEJS</a>
+        <a href="#" class="ga-nav" title="R Tutorial">R</a>
+        <a href="#" class="ga-nav" title="TypeScript Tutorial">TYPESCRIPT</a>
+        <a href="#" class="ga-nav" title="Angular.js Tutorial">ANGULAR</a>
+        <a href="#" class="ga-nav" title="Git Tutorial">GIT</a>
+        <a href="#" class="ga-nav" title="PostgreSQL Tutorial">POSTGRESQL</a>
+        <a href="#" class="ga-nav" title="MongoDB Tutorial">MONGODB</a>
+        <a href="#" class="ga-nav" title="ASP Tutorial">ASP</a>
+        <a href="#" class="ga-nav" title="A.I. Tutorial">AI</a>
+        <a href="#" class="ga-nav" title="Go Tutorial">GO</a>
+        <a href="#" class="ga-nav" title="Kotlin Tutorial">KOTLIN</a>
+        <a href="#" class="ga-nav" title="Sass Tutorial">SASS</a>
+        <a href="#" class="ga-nav" title="Vue.js Tutorial">VUE</a>
+        <a href="#" class="ga-nav" title="DSA Tutorial">DSA</a>
+        <a href="#" class="ga-nav" title="Gen A.I. Tutorial">GEN AI</a>
+        <a href="#" class="ga-nav" title="SciPy Tutorial">SCIPY</a>
+        <a href="#" class="ga-nav" title="AWS Tutorial">AWS</a>
+        <a href="#" class="ga-nav" title="Cyber security Tutorial">CYBERSECURITY</a>
+        <a href="#" class="ga-nav" title="Data science Tutorial">DATA SCIENCE</a>
+    </div>
+
+    <div id="capa" class="d-flex flex-row justify-content-center align-items-center bg-imagem-estrelas">
+
+        <div class="d-flex flex-column align-items-center text-light">
+            <h1 class="h1 font-weight-bold mb-4">Aprenda programação</h1>
+            <h3 class="h3 text-warning mb-4">Com o maior site de desenvolvimento web do mundo.</h3>
+            <form class="mb-4 w-75">
+                <div class="input-group">
+                    <input type="text" class="form-control radius-left-25"
+                        placeholder="Pesquise nossos tutoriais, ex. HTML"
+                        aria-label="Pesquise nossos tutoriais, ex. HTML" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-success radius-right-25" type="button" id="button-addon2">
+                            <i class="fa fa-search mx-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <h3 class="h3 text-sublinhado">Não sabe por onde começar?</h3>
+        </div>
+
+        <img id="linx_in_space" class="d-none d-xl-block position-absolute" src="lynx_in_space.png" />
+
+    </div>
+
+    <!-- Borda ondulado copiada diretamente do site - SVG é um arquivo com vetores. -->
+    <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+    </svg>
+
+    <!-- Cards de conteúdos -->
+    <div class="py-5" style="background-color:#D9EEE1; min-height: 10vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-2 font-weight-bold">HTML</h1>
+                    <p class="h3 mb-3">A linguagem para construir páginas web</p>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button class="btn btn-block btn-rounded w-50 btn-success mb-3">
+                            Aprende HTML
+                        </button>
+                        <button class="btn btn-block btn-rounded w-50 btn-warning mb-3">
+                            Tutoriais em vídeo
+                        </button>
+                        <button class="btn btn-block btn-rounded w-50 btn-dark mb-3">
+                            Referências do HTML
+                        </button>
+                        <button class="btn btn-block btn-rounded w-50 btn-danger mb-3">
+                            Seja certificado
+                        </button>
+                    </div>
+                </div>
+                <div class="col px-5 py-2">
+                    <div class="card shadow bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Exemplo de HTML</h5>
+                            <div class="codigo mb-3">
+                                <code>
+                                    &lt;!DOCTYPE html&gt;<br/>
+                                    &lt;html&gt;<br/>
+                                    &lt;head&gt;<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;<br>
+                                </code>
+                            </div>
+                            <button class="btn btn-block btn-rounded w-50 btn-success mb-3">
+                                Tente você também
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5" style="background-color:#FFF4A3; min-height: 10vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-2 font-weight-bold">CSS</h1>
+                    <p class="h3 mb-3">A linguagem para estilizar páginas web</p>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button class="btn btn-block btn-rounded w-50 btn-success mb-3">
+                            Aprende CSS
+                        </button>
+                        <button class="btn btn-block btn-rounded w-50 btn-dark mb-3">
+                            Referências do HTML
+                        </button>
+                        <button class="btn btn-block btn-rounded w-50 btn-danger mb-3">
+                            Seja certificado
+                        </button>
+                    </div>
+                </div>
+                <div class="col px-5 py-2">
+                    <div class="card shadow bg-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Exemplo de CSS</h5>
+                            <div class="codigo mb-3">
+                                <code>
+                                    body { <br>
+                                        background-color: lightblue;<br>
+                                      }<br>
+                                      <br>
+                                      h1 {<br>
+                                        color: white;<br>
+                                        text-align: center;<br>
+                                      }<br>
+                                      <br>
+                                      p {<br>
+                                        font-family: verdana;<br>
+                                      }
+                                </code>
+                            </div>
+                            <button class="btn btn-block btn-rounded w-50 btn-success mb-3">
+                                Tente você também
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5" style="background-color:#282A35; min-height: 10vh;">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col p-3 d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #FFC0C7;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">PHP</h2>
+                            <p class="my-4 font-weight-bold">Linguagem de programação para servidores web</p>
+                            <button class="btn btn-dark btn-rounded">Aprenda PHP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #FFF4A3;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">jQuery</h2>
+                            <p class="my-4 font-weight-bold">Biblioteca JavaScript para desenvolvimento de páginas web
+                            </p>
+                            <button class="btn btn-dark btn-rounded">Aprenda jQuery</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col p-3 d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #E7E9EB;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Bootstrap</h2>
+                            <p class="my-4 font-weight-bold">Um framework CSS para criar melhores páginas web</p>
+                            <button class="btn btn-dark btn-rounded">Aprenda PHP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3 d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #96d4d4;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Kotlin</h2>
+                            <p class="my-4 font-weight-bold">Linguagem de programação para desenvolvimento mobile</p>
+                            <button class="btn btn-dark btn-rounded">Aprenda Kotlin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards menores -->
+            <div class="row mb-3">
+                <div class="col d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #E7E9EB;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">R</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #96d4d4;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">JSON</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #FFF4A3;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Python</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                    <div class="card shadow text-center w-100" style="background-color: #FFC0C7;">
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">JavaScript</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-imagem-estrelas">
+        <div class="d-flex flex-row justify-content-end">
+            <img src="lynx_landing.png" />
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
